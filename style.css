@@ -370,3 +370,110 @@ body {
     text-align: center;
   }
 }
+
+/* Laptop Service Section */
+.laptop-service {
+  padding: 3rem 1.5rem;
+  background-color: #f9fafb; /* Light gray background */
+  font-family: Arial, sans-serif;
+}
+
+.laptop-service .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media(min-width: 768px) {
+  .laptop-service .container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+/* Left content */
+.laptop-service h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.laptop-service h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #dc2626; /* Red color */
+  margin-bottom: 1.5rem;
+}
+
+.laptop-service ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.laptop-service ul li {
+  margin-bottom: 0.5rem;
+  color: #374151; /* Gray text */
+  line-height: 1.6;
+}
+
+.laptop-service ul li::before {
+  content: "✔";
+  color: #16a34a; /* Green checkmark */
+  margin-right: 0.5rem;
+}
+
+/* Right contact form */
+.laptop-service form {
+  background-color: #ffffff;
+  border: 2px solid #dc2626; /* Red border */
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.laptop-service form h3 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #dc2626;
+  margin-bottom: 1rem;
+}
+
+.laptop-service input,
+.laptop-service select,
+.laptop-service textarea {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db; /* Gray border */
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.laptop-service textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.laptop-service .flex {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.laptop-service button {
+  width: 100%;
+  background-color: #dc2626;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.laptop-service button:hover {
+  background-color: #b91c1c;
+}
