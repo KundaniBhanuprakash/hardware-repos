@@ -8,6 +8,7 @@
   <script defer src="script.js"></script>
 </head>
 <body>
+  <!-- Header -->
   <header class="top-header">
     <div class="header-inner">
       <div class="logo">Tech<span>Care</span></div>
@@ -26,36 +27,57 @@
     </div>
   </header>
 
+  <!-- Page Header -->
   <section class="page-header">
     <h1>Contact Us</h1>
     <p>We’re here to help you — reach out anytime.</p>
   </section>
 
+  <!-- Contact Section -->
   <section class="contact-section container">
-    <form class="contact-form">
-      <label>Name</label>
-      <input type="text" placeholder="Your Name" required>
+    <!-- Contact Form -->
+    <div class="contact-form-wrapper">
+      <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your Name" required>
 
-      <label>Email</label>
-      <input type="email" placeholder="Your Email" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your Email" required>
 
-      <label>Message</label>
-      <textarea placeholder="Your Message..." required></textarea>
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Your Message..." required></textarea>
 
-      <button type="submit" class="btn-primary">Send Message</button>
-    </form>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </div>
 
+    <!-- Contact Info -->
     <div class="contact-info">
       <h3>Contact Details</h3>
       <p><strong>Phone:</strong> +91 98765 43210</p>
       <p><strong>Email:</strong> support@techcare.com</p>
       <p><strong>Address:</strong> TechCare Center, Chennai, India</p>
+      <p><strong>Follow Us:</strong> Facebook | Twitter | Instagram</p>
     </div>
   </section>
 
+  <!-- Optional: Google Maps Embed -->
+  <section class="contact-map container">
+    <h3>Find Us Here</h3>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.5673158740655!2d80.25618111482396!3d13.08268069057414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267dce8e9ed17%3A0x1234567890abcdef!2sChennai!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin" 
+      width="100%" 
+      height="350" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </section>
+
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-bottom">
-      <p>© 2025 TechCare. All Rights Reserved.</p>
+      <p>© 2025 TechCare Hardware Services. All Rights Reserved.</p>
     </div>
   </footer>
 </body>
