@@ -3,74 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About Us - TechCare</title>
+  <title>About TechCare - Multi-brand Device Repair & IT Services</title>
+  <meta name="description" content="TechCare provides expert laptop, desktop, mobile, and network repair services in India. Fast, reliable, and certified IT support for homes and offices.">
+  <meta name="keywords" content="TechCare, Laptop Repair, Desktop Repair, Mobile Repair, Network Setup, On-site Support, Hardware Upgrades">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="about.css"> <!-- About page specific CSS -->
   <script defer src="script.js"></script>
-  <!-- Include Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-pvCn6o4J3GfN+6F6jPj2Jv0pI+7gZmX0IqXpMTYV+R+YvGkYo7Z1R7kX5gnRykaIlS6k3OHvVxXq0pMGKZik4g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>
-    /* About Page Styling */
-    .about-section {
-      padding: 50px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .about-section h2 {
-      margin-top: 40px;
-      color: #333;
-      text-align: center;
-    }
-
-    .about-cards {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      margin-top: 30px;
-      justify-content: center;
-    }
-
-    .about-card {
-      background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 30px 20px;
-      flex: 1 1 220px;
-      text-align: center;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .about-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
-    }
-
-    .about-card i {
-      font-size: 40px;
-      color: #007bff;
-      margin-bottom: 15px;
-    }
-
-    .about-card h3 {
-      margin-bottom: 10px;
-      font-size: 20px;
-      color: #333;
-    }
-
-    .about-card p {
-      color: #555;
-      font-size: 16px;
-    }
-
-    .about-section p {
-      color: #555;
-      line-height: 1.8;
-      text-align: center;
-      max-width: 800px;
-      margin: 15px auto;
-    }
-  </style>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" 
+        integrity="sha512-pvCn6o4J3GfN+6F6jPj2Jv0pI+7gZmX0IqXpMTYV+R+YvGkYo7Z1R7kX5gnRykaIlS6k3OHvVxXq0pMGKZik4g==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <!-- Header -->
@@ -93,47 +35,78 @@
   </header>
 
   <!-- Page Header -->
-  <section class="page-header">
+  <section class="page-header about-page-header">
     <h1>About TechCare</h1>
-    <p>Your trusted partner in hardware repairs and IT services.</p>
+    <p>Certified multi-brand repair services for laptops, desktops, mobile devices, and networks in India.</p>
   </section>
 
-  <!-- About Section -->
-  <section class="about-section container">
-    <p>
-      TechCare was founded with a simple mission: to make device repair and IT support faster, more transparent, and customer-centric.
-      Our certified professionals provide full-stack hardware solutions from diagnostics to delivery. Every repair is handled with care, precision, and speed.
-    </p>
+  <!-- Company Overview -->
+  <section class="about-section container" aria-label="Company Overview">
+    <h2>Who We Are</h2>
+    <p>TechCare is a trusted provider of professional IT repair services in India. Our certified technicians specialize in laptops, desktops, mobile devices, network setup, on-site support, and hardware upgrades. We focus on delivering fast, reliable, and transparent services with customer satisfaction as our top priority.</p>
+    <img src="images/360_F_211395193_ILTeSLFdGh1LIVxYwCcjGLcUCDBxiwTr.jpg" alt="TechCare team working on devices" class="about-image">
+  </section>
 
+  <!-- Core Values -->
+  <section class="about-section container" aria-label="Core Values">
     <h2>Our Core Values</h2>
-    <div class="about-cards">
-      <div class="about-card">
-        <i class="fas fa-bolt"></i>
-        <h3>Fast Service</h3>
-        <p>We value your time and ensure quick diagnostics and repairs without compromising quality.</p>
-      </div>
-      <div class="about-card">
-        <i class="fas fa-user-shield"></i>
-        <h3>Trust & Transparency</h3>
-        <p>All repairs and services are fully transparent with clear pricing and updates at every step.</p>
-      </div>
-      <div class="about-card">
-        <i class="fas fa-cogs"></i>
-        <h3>Expert Technicians</h3>
-        <p>Certified professionals handle all devices, multi-brand support, and complex repairs efficiently.</p>
-      </div>
-      <div class="about-card">
-        <i class="fas fa-thumbs-up"></i>
-        <h3>Customer Satisfaction</h3>
-        <p>Your satisfaction is our priority, with after-service support and warranty assurance.</p>
-      </div>
-    </div>
+    <article class="about-card">
+      <h3>Fast Service</h3>
+      <p>Quick diagnostics and repairs for laptops, desktops, and mobile devices without compromising quality.</p>
+    </article>
+    <article class="about-card">
+      <h3>Trust & Transparency</h3>
+      <p>Clear pricing, step-by-step updates, and full transparency in all repairs and services.</p>
+    </article>
+    <article class="about-card">
+      <h3>Expert Technicians</h3>
+      <p>Certified professionals handle multi-brand repairs, hardware upgrades, and complex troubleshooting.</p>
+    </article>
+    <article class="about-card">
+      <h3>Customer Satisfaction</h3>
+      <p>After-service support and warranty assurance ensure long-term trust and reliability.</p>
+    </article>
+  </section>
 
+  <!-- Services Highlight -->
+  <section class="about-section container" aria-label="Services Offered">
+    <h2>Our Key Services</h2>
+    <div class="service-highlights">
+      <article class="service-card">
+        <img src="images/technician-repairing-broken-laptop-notebook-computer-with-screwdriver_185126-925.jpg" alt="Laptop Repair Service" class="service-img">
+        <h3>Laptop & Desktop Repair</h3>
+        <p>Hardware and software repair, upgrades, and maintenance for all laptop and desktop brands.</p>
+      </article>
+      <article class="service-card">
+        <img src="images/360_F_519733648_tSMSHwqxw3TrbgFSXNKJVKncdkC0siTq.jpg" alt="Mobile Repair Service" class="service-img">
+        <h3>Mobile & Tablet Repair</h3>
+        <p>Screen replacement, battery change, software recovery, and peripheral troubleshooting for mobile devices.</p>
+      </article>
+      <article class="service-card">
+        <img src="images/network-and-internet-setup.jpg" alt="Network Setup Service" class="service-img">
+        <h3>Network Setup</h3>
+        <p>Wi-Fi installation, troubleshooting, and connectivity support for homes and offices.</p>
+      </article>
+      <article class="service-card">
+        <img src="images/organic-flat-customer-support_23-2148895051.jpg" alt="On-site Technical Support" class="service-img">
+        <h3>On-site Support</h3>
+        <p>Quick and reliable troubleshooting at your home or office for computers, networks, and devices.</p>
+      </article>
+      <article class="service-card">
+        <img src="images/close-up-man-repairing-computer-chips_23-2150880997.jpg" alt="Hardware Upgrade Service" class="service-img">
+        <h3>Hardware Upgrades</h3>
+        <p>Boost system performance with RAM, SSD, GPU upgrades, and storage expansions.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="about-section container" aria-label="Mission and Vision">
     <h2>Our Mission</h2>
-    <p>To offer top-notch, affordable, and transparent tech repair services across India.</p>
+    <p>To provide affordable, fast, and professional multi-brand IT repair services across India while maintaining transparency and reliability.</p>
 
     <h2>Our Vision</h2>
-    <p>To become India’s most trusted multi-brand device service provider.</p>
+    <p>To become India’s most trusted device repair and IT services provider, recognized for quality, expertise, and customer satisfaction.</p>
   </section>
 
   <!-- Footer -->
