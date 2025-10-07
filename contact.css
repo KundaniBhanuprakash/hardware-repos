@@ -1,0 +1,123 @@
+/* Contact Section */
+.contact-section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+/* Contact Form */
+.contact-form-wrapper {
+  flex: 1 1 450px;
+  background: #f5f7fa;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.contact-form-wrapper h2 {
+  color: #007bff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contact-form-wrapper p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.contact-form .input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.contact-form .input-group i {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: #007bff;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Submit Button */
+.btn-primary {
+  background: #007bff;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Contact Info */
+.contact-info {
+  flex: 1 1 300px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.contact-info h3 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 15px;
+  margin-bottom: 12px;
+  color: #555;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}

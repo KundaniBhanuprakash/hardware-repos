@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact Us - TechCare</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
   <script defer src="script.js"></script>
 </head>
 <body>
@@ -34,19 +35,25 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="contact-section container">
+<section class="contact-section container">
+  <div class="contact-container">
     <!-- Contact Form -->
     <div class="contact-form-wrapper">
+      <h2>Get in Touch</h2>
+      <p>Have questions or need a repair? Fill out the form and our team will reach you quickly.</p>
       <form class="contact-form">
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Your Name" required>
-
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Your Email" required>
-
-        <label for="message">Message</label>
-        <textarea id="message" placeholder="Your Message..." required></textarea>
-
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+          <input type="text" id="name" placeholder="Your Name" required>
+        </div>
+        <div class="input-group">
+          <i class="fas fa-envelope"></i>
+          <input type="email" id="email" placeholder="Your Email" required>
+        </div>
+        <div class="input-group">
+          <i class="fas fa-comment-dots"></i>
+          <textarea id="message" placeholder="Your Message..." required></textarea>
+        </div>
         <button type="submit" class="btn-primary">Send Message</button>
       </form>
     </div>
@@ -54,12 +61,14 @@
     <!-- Contact Info -->
     <div class="contact-info">
       <h3>Contact Details</h3>
-      <p><strong>Phone:</strong> +91 98765 43210</p>
-      <p><strong>Email:</strong> support@techcare.com</p>
-      <p><strong>Address:</strong> TechCare Center, Chennai, India</p>
-      <p><strong>Follow Us:</strong> Facebook | Twitter | Instagram</p>
+      <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+      <p><i class="fas fa-envelope"></i> support@techcare.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> TechCare Center, Chennai, India</p>
+      <p><i class="fas fa-share-alt"></i> Follow Us: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Optional: Google Maps Embed -->
   <section class="contact-map container">
