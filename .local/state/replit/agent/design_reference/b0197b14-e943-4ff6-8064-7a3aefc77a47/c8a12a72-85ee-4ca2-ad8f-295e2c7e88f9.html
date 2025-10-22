@@ -1,0 +1,612 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dell Laptops - Professional Computing Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                borderRadius: {
+                    lg: "var(--radius)",
+                    md: "calc(var(--radius) - 2px)",
+                    sm: "calc(var(--radius) - 4px)",
+                },
+                colors: {
+                    background: "var(--background)",
+                    foreground: "var(--foreground)",
+                    card: {
+                        DEFAULT: "var(--card)",
+                        foreground: "var(--card-foreground)",
+                    },
+                    primary: {
+                        DEFAULT: "var(--primary)",
+                        foreground: "var(--primary-foreground)",
+                    },
+                    secondary: {
+                        DEFAULT: "var(--secondary)",
+                        foreground: "var(--secondary-foreground)",
+                    },
+                    muted: {
+                        DEFAULT: "var(--muted)",
+                        foreground: "var(--muted-foreground)",
+                    },
+                    accent: {
+                        DEFAULT: "var(--accent)",
+                        foreground: "var(--accent-foreground)",
+                    },
+                    border: "var(--border)",
+                    input: "var(--input)",
+                    ring: "var(--ring)",
+                },
+                fontFamily: {
+                    sans: ["Inter", "system-ui", "sans-serif"],
+                }
+            },
+        }
+    };
+    </script>
+    <style>
+        :root {
+            --radius: 8px;
+            --background: hsl(0 0% 100%);
+            --foreground: hsl(240 10% 3.9%);
+            --card: hsl(0 0% 100%);
+            --card-foreground: hsl(240 10% 3.9%);
+            --primary: hsl(210 100% 45%);
+            --primary-foreground: hsl(0 0% 98%);
+            --secondary: hsl(210 40% 96%);
+            --secondary-foreground: hsl(240 5.9% 10%);
+            --muted: hsl(210 40% 96%);
+            --muted-foreground: hsl(240 3.8% 46.1%);
+            --accent: hsl(210 40% 96%);
+            --accent-foreground: hsl(240 5.9% 10%);
+            --border: hsl(214.3 31.8% 91.4%);
+            --input: hsl(214.3 31.8% 91.4%);
+            --ring: hsl(210 100% 45%);
+        }
+        
+        .dell-blue { color: #0073e6; }
+        .dell-blue-bg { background-color: #0073e6; }
+        .dell-navy { color: #003d6b; }
+        .dell-navy-bg { background-color: #003d6b; }
+        
+        .product-card {
+            transition: all 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0, 115, 230, 0.15);
+        }
+        
+        .nav-dropdown {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+        
+        .nav-item:hover .nav-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-background text-foreground font-sans">
+    <!-- @COMPONENT: Header Navigation -->
+    <header class="bg-white shadow-sm border-b border-border sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Dell Logo -->
+                <div class="flex items-center">
+                    <div class="text-2xl font-bold dell-blue">DELL</div>
+                </div>
+                
+                <!-- Main Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <div class="nav-item relative">
+                        <button class="text-foreground hover:text-primary font-medium transition-colors duration-200">
+                            Laptops <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="nav-dropdown absolute top-full left-0 mt-2 w-64 bg-white shadow-lg rounded-lg border border-border p-4">
+                            <div class="space-y-2">
+                                <a href="#" class="block px-3 py-2 text-sm text-foreground hover:bg-accent rounded-md">XPS Series</a>
+                                <a href="#" class="block px-3 py-2 text-sm text-foreground hover:bg-accent rounded-md">Inspiron Series</a>
+                                <a href="#" class="block px-3 py-2 text-sm text-foreground hover:bg-accent rounded-md">Latitude Series</a>
+                                <a href="#" class="block px-3 py-2 text-sm text-foreground hover:bg-accent rounded-md">Gaming Laptops</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="nav-item relative">
+                        <button class="text-foreground hover:text-primary font-medium transition-colors duration-200">
+                            Business <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="nav-dropdown absolute top-full left-0 mt-2 w-56 bg-white shadow-lg rounded-lg border border-border p-4">
+                            <div class="space-y-2">
+                                <a href="#" class="block px-3 py-2 text-sm text-foreground hover:bg-accent rounded-md">Workstations</a>
+                                <a href="#" class="block px-3 py-2 text-sm text-foreground hover:bg-accent rounded-md">Enterprise Solutions</a>
+                                <a href="#" class="block px-3 py-2 text-sm text-foreground hover:bg-accent rounded-md">Small Business</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="text-foreground hover:text-primary font-medium transition-colors duration-200">Support</a>
+                    <a href="#" class="text-foreground hover:text-primary font-medium transition-colors duration-200">Services</a>
+                </nav>
+                
+                <!-- Search and Cart -->
+                <div class="flex items-center space-x-4">
+                    <div class="relative hidden sm:block">
+                        <input type="text" placeholder="Search laptops..." class="w-64 pl-10 pr-4 py-2 border border-input rounded-lg focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent">
+                        <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground"></i>
+                    </div>
+                    <button class="relative p-2 text-foreground hover:text-primary transition-colors duration-200">
+                        <i class="fas fa-shopping-cart text-lg"></i>
+                        <span class="absolute -top-1 -right-1 bg-primary text-primary-foreground text-xs rounded-full h-5 w-5 flex items-center justify-center">3</span>
+                    </button>
+                    <button class="md:hidden p-2 text-foreground hover:text-primary">
+                        <i class="fas fa-bars text-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- @END_COMPONENT: Header Navigation -->
+
+    <!-- @COMPONENT: Hero Section -->
+    <section class="bg-gradient-to-br from-primary to-dell-navy-bg text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                        Power Your <span class="text-blue-200">Potential</span>
+                    </h1>
+                    <p class="text-xl mb-8 text-blue-100 leading-relaxed">
+                        Discover Dell's latest collection of premium laptops designed for professionals, creators, and innovators. Experience unmatched performance and reliability.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-200 shadow-lg">
+                            Shop Now
+                        </button>
+                        <button class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors duration-200">
+                            View Catalog
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <!-- Modern Dell laptop showcase with clean background -->
+                    <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" alt="Modern Dell laptop on a clean desk" class="rounded-xl shadow-2xl w-full h-auto transform rotate-3 hover:rotate-0 transition-transform duration-500" />
+                    <div class="absolute -bottom-4 -left-4 bg-white text-primary p-4 rounded-lg shadow-lg">
+                        <div class="text-sm font-semibold">Starting at</div>
+                        <div class="text-2xl font-bold">$899</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Hero Section -->
+
+    <!-- @COMPONENT: Featured Categories -->
+    <section class="py-16 bg-muted">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-foreground mb-4">Shop by Category</h2>
+                <p class="text-xl text-muted-foreground max-w-2xl mx-auto">Find the perfect laptop for your needs, whether you're a professional, student, or gamer.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-card rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                    <!-- Sleek professional laptop in office setting -->
+                    <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" alt="Professional laptop for business use" class="w-full h-48 object-cover" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Business & Professional</h3>
+                        <p class="text-muted-foreground mb-4">Reliable laptops built for productivity and performance in professional environments.</p>
+                        <button class="text-primary font-semibold hover:underline">Explore Business Laptops →</button>
+                    </div>
+                </div>
+                
+                <div class="bg-card rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                    <!-- Student using laptop in modern setting -->
+                    <img src="https://pixabay.com/get/g5ace841e9ce2c2267f44b947731276015000bb61516c4b64e5328a2c2ca24354c6c23515d5e258e6dfc5b44262e521a2bdb4b95379d31029b8436ede94d84a6c_1280.jpg" alt="Student laptop for education and learning" class="w-full h-48 object-cover" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Student & Education</h3>
+                        <p class="text-muted-foreground mb-4">Affordable and durable laptops perfect for students and educational institutions.</p>
+                        <button class="text-primary font-semibold hover:underline">Shop Student Laptops →</button>
+                    </div>
+                </div>
+                
+                <div class="bg-card rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                    <!-- Gaming laptop with RGB lighting -->
+                    <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" alt="Gaming laptop with RGB lighting and high performance" class="w-full h-48 object-cover" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Gaming & Creative</h3>
+                        <p class="text-muted-foreground mb-4">High-performance laptops designed for gaming, content creation, and demanding applications.</p>
+                        <button class="text-primary font-semibold hover:underline">Discover Gaming Laptops →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Featured Categories -->
+
+    <!-- @COMPONENT: Product Showcase -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold text-foreground mb-4">Featured Laptops</h2>
+                    <p class="text-xl text-muted-foreground">Discover our most popular and highly-rated laptop models.</p>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <select class="border border-input rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-ring">
+                        <option>Sort by Price</option>
+                        <option>Sort by Rating</option>
+                        <option>Sort by Popularity</option>
+                    </select>
+                    <button class="p-2 border border-input rounded-lg hover:bg-accent transition-colors duration-200">
+                        <i class="fas fa-filter"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- @MAP: featuredLaptops.map(laptop => ( -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product Card 1 -->
+                <div class="product-card bg-card rounded-xl shadow-md overflow-hidden border border-border" data-mock="true">
+                    <div class="relative">
+                        <!-- Dell XPS laptop with premium design -->
+                        <img src="https://pixabay.com/get/gc3a884923a23fb8c2a18b1fdec6970e6fde107f6ffe94a1c0cfba765570b8e209875aa0dbf2498e9f1ef6acbad57c0aedc08a3a5ccb0e77552a4e56c0124bc82_1280.jpg" alt="Dell XPS 13 Premium Ultrabook" class="w-full h-64 object-cover" />
+                        <div class="absolute top-4 left-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold">
+                            Best Seller
+                        </div>
+                        <button class="absolute top-4 right-4 p-2 bg-white rounded-full shadow-md hover:bg-gray-50 transition-colors duration-200">
+                            <i class="fas fa-heart text-gray-400 hover:text-red-500"></i>
+                        </button>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-sm text-muted-foreground font-medium">XPS Series</span>
+                            <div class="flex items-center">
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                </div>
+                                <span class="text-sm text-muted-foreground ml-1">(4.8)</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2" data-bind="laptop.name">Dell XPS 13 9320</h3>
+                        <p class="text-muted-foreground text-sm mb-4">13.4" InfinityEdge Display, Intel Core i7, 16GB RAM, 512GB SSD</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-foreground" data-bind="laptop.price">$1,299</span>
+                                <span class="text-sm text-muted-foreground line-through ml-2">$1,499</span>
+                            </div>
+                            <span class="text-green-600 text-sm font-semibold">Save $200</span>
+                        </div>
+                        <div class="space-y-2">
+                            <button class="w-full bg-primary text-primary-foreground py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors duration-200">
+                                Add to Cart
+                            </button>
+                            <button class="w-full border border-border text-foreground py-3 rounded-lg font-semibold hover:bg-accent transition-colors duration-200">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product Card 2 -->
+                <div class="product-card bg-card rounded-xl shadow-md overflow-hidden border border-border" data-mock="true">
+                    <div class="relative">
+                        <!-- Dell Inspiron laptop in professional setting -->
+                        <img src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" alt="Dell Inspiron 15 3000 Everyday Laptop" class="w-full h-64 object-cover" />
+                        <div class="absolute top-4 left-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Great Value
+                        </div>
+                        <button class="absolute top-4 right-4 p-2 bg-white rounded-full shadow-md hover:bg-gray-50 transition-colors duration-200">
+                            <i class="fas fa-heart text-gray-400 hover:text-red-500"></i>
+                        </button>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-sm text-muted-foreground font-medium">Inspiron Series</span>
+                            <div class="flex items-center">
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="far fa-star text-xs"></i>
+                                </div>
+                                <span class="text-sm text-muted-foreground ml-1">(4.3)</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2" data-bind="laptop.name">Dell Inspiron 15 3000</h3>
+                        <p class="text-muted-foreground text-sm mb-4">15.6" HD Display, Intel Core i5, 8GB RAM, 256GB SSD</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-foreground" data-bind="laptop.price">$649</span>
+                            </div>
+                            <span class="text-blue-600 text-sm font-semibold">In Stock</span>
+                        </div>
+                        <div class="space-y-2">
+                            <button class="w-full bg-primary text-primary-foreground py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors duration-200">
+                                Add to Cart
+                            </button>
+                            <button class="w-full border border-border text-foreground py-3 rounded-lg font-semibold hover:bg-accent transition-colors duration-200">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product Card 3 -->
+                <div class="product-card bg-card rounded-xl shadow-md overflow-hidden border border-border" data-mock="true">
+                    <div class="relative">
+                        <!-- Dell gaming laptop with modern design -->
+                        <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" alt="Dell G15 Gaming Laptop with high performance" class="w-full h-64 object-cover" />
+                        <div class="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Gaming
+                        </div>
+                        <button class="absolute top-4 right-4 p-2 bg-white rounded-full shadow-md hover:bg-gray-50 transition-colors duration-200">
+                            <i class="fas fa-heart text-gray-400 hover:text-red-500"></i>
+                        </button>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-sm text-muted-foreground font-medium">G Series Gaming</span>
+                            <div class="flex items-center">
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                </div>
+                                <span class="text-sm text-muted-foreground ml-1">(4.7)</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2" data-bind="laptop.name">Dell G15 Gaming Laptop</h3>
+                        <p class="text-muted-foreground text-sm mb-4">15.6" FHD 120Hz, AMD Ryzen 7, 16GB RAM, RTX 3060, 512GB SSD</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-foreground" data-bind="laptop.price">$1,099</span>
+                                <span class="text-sm text-muted-foreground line-through ml-2">$1,299</span>
+                            </div>
+                            <span class="text-green-600 text-sm font-semibold">Save $200</span>
+                        </div>
+                        <div class="space-y-2">
+                            <button class="w-full bg-primary text-primary-foreground py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors duration-200">
+                                Add to Cart
+                            </button>
+                            <button class="w-full border border-border text-foreground py-3 rounded-lg font-semibold hover:bg-accent transition-colors duration-200">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- @END_MAP )) -->
+            
+            <div class="text-center mt-12">
+                <button class="bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold hover:bg-blue-600 transition-colors duration-200">
+                    View All Laptops
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Product Showcase -->
+
+    <!-- @COMPONENT: Why Choose Dell Section -->
+    <section class="py-16 bg-muted">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-foreground mb-4">Why Choose Dell Laptops?</h2>
+                <p class="text-xl text-muted-foreground max-w-3xl mx-auto">Experience the Dell difference with our commitment to innovation, reliability, and customer satisfaction.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-primary rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-award text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Award-Winning Design</h3>
+                    <p class="text-muted-foreground">Recognized globally for innovative design and engineering excellence.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-primary rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Reliable Performance</h3>
+                    <p class="text-muted-foreground">Built to last with rigorous testing and quality assurance processes.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-primary rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-headset text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Expert Support</h3>
+                    <p class="text-muted-foreground">24/7 customer support and comprehensive warranty coverage.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-primary rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-leaf text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Sustainable Technology</h3>
+                    <p class="text-muted-foreground">Committed to environmental responsibility and sustainable practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Why Choose Dell Section -->
+
+    <!-- @COMPONENT: Newsletter & CTA -->
+    <section class="py-16 bg-gradient-to-r from-primary to-dell-navy-bg text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-4">Stay Updated with Dell</h2>
+            <p class="text-xl mb-8 text-blue-100">Get the latest news, product updates, and exclusive offers delivered to your inbox.</p>
+            
+            <div class="flex flex-col sm:flex-row max-w-md mx-auto gap-4">
+                <input type="email" placeholder="Enter your email address" class="flex-1 px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-300">
+                <button class="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-200">
+                    Subscribe
+                </button>
+            </div>
+            
+            <p class="text-sm text-blue-200 mt-4">
+                By subscribing, you agree to our Privacy Policy and Terms of Service.
+            </p>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Newsletter & CTA -->
+
+    <!-- @COMPONENT: Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="text-2xl font-bold text-blue-400 mb-4">DELL</div>
+                    <p class="text-gray-300 mb-4">Leading technology solutions provider, delivering innovative laptops and computing devices worldwide.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition-colors duration-200">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition-colors duration-200">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition-colors duration-200">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition-colors duration-200">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Products -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Products</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition-colors duration-200">XPS Laptops</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition-colors duration-200">Inspiron Series</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition-colors duration-200">Gaming Laptops</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition-colors duration-200">Business Laptops</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition-colors duration-200">Workstations</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Support -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition-colors duration-200">Customer Support</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition-colors duration-200">Technical Support</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition-colors duration-200">Warranty Information</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition-colors duration-200">Driver Downloads</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition-colors duration-200">User Manuals</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Company -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition-colors duration-200">About Dell</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition-colors duration-200">Careers</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition-colors duration-200">Investor Relations</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition-colors duration-200">Press Center</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition-colors duration-200">Environmental Impact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-300 text-sm">© 2024 Dell Technologies Inc. All rights reserved.</p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="text-gray-300 hover:text-blue-400 text-sm transition-colors duration-200">Privacy Policy</a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400 text-sm transition-colors duration-200">Terms of Service</a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400 text-sm transition-colors duration-200">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+        // TODO: Implement product filtering and search functionality
+        // TODO: Add shopping cart state management
+        // TODO: Implement product comparison features
+        // TODO: Add user authentication and account management
+        
+        (function() {
+            // Mobile menu toggle functionality
+            const mobileMenuButton = document.querySelector('.md\\:hidden button');
+            if (mobileMenuButton) {
+                mobileMenuButton.addEventListener('click', function() {
+                    // TODO: Implement mobile menu toggle
+                    console.log('Mobile menu toggle clicked');
+                });
+            }
+            
+            // Search functionality
+            const searchInput = document.querySelector('input[placeholder="Search laptops..."]');
+            if (searchInput) {
+                searchInput.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') {
+                        // TODO: Implement search functionality
+                        console.log('Search for:', this.value);
+                    }
+                });
+            }
+            
+            // Add to cart functionality
+            document.querySelectorAll('button:contains("Add to Cart")').forEach(button => {
+                if (button.textContent.includes('Add to Cart')) {
+                    button.addEventListener('click', function() {
+                        // TODO: Implement add to cart functionality
+                        console.log('Product added to cart');
+                        
+                        // Simple visual feedback
+                        const originalText = this.textContent;
+                        this.textContent = 'Added!';
+                        this.style.backgroundColor = '#059669';
+                        
+                        setTimeout(() => {
+                            this.textContent = originalText;
+                            this.style.backgroundColor = '';
+                        }, 1500);
+                    });
+                }
+            });
+            
+            // Newsletter subscription
+            const subscribeButton = document.querySelector('button:contains("Subscribe")');
+            if (subscribeButton && subscribeButton.textContent.includes('Subscribe')) {
+                subscribeButton.addEventListener('click', function() {
+                    const emailInput = this.previousElementSibling;
+                    if (emailInput && emailInput.value) {
+                        // TODO: Implement newsletter subscription
+                        console.log('Newsletter subscription for:', emailInput.value);
+                        alert('Thank you for subscribing!');
+                        emailInput.value = '';
+                    }
+                });
+            }
+        })();
+    </script>
+</body>
+</html>
